@@ -17,16 +17,16 @@
 
 			<!-- Top section of the site -->
 			<header>
-				<a  class="logo" href="url_Make()" cms:eval="href">
+				<a  class="logo" href="URL::make(array())" cms:eval="href">
 					<img src="_BASEURL.'/site/images/logo.svg'" alt="logo" cms:eval="src"/>
 				</a>
 				<cms:mobile>
-					<a href="url_Make().'#form_direct'" cms:eval="href" class="sign">
+					<a href="URL::make(array()).'#form_direct'" cms:eval="href" class="sign">
 						<cms:text constant="sign"/>
 						<cms:svg file="site-sprite.svg" symbol="form"/>
 					</a>
 					<a
-						href="'tel:'.urlencode(Language::getText('phone'))"
+						href="'tel:'.urlencode(Language::get_Text('phone'))"
 						cms:eval="href"
 						class="phone"
 						>
@@ -36,7 +36,7 @@
 
 				<cms:desktop>
 					<a
-						href="'tel:'.urlencode(Language::getText('phone'))"
+						href="'tel:'.urlencode(Language::get_Text('phone'))"
 						cms:eval="href"
 						class="phone"
 						>
@@ -103,7 +103,6 @@
 			</section>
 
 			<!-- Lecureres sections -->
-
 			<section class="grey">
 				<h2><cms:text constant="title_graduates"/></h2>
 				<ul class="image_list">
@@ -138,7 +137,7 @@
 						<img src="_BASEURL.'/site/images/logo.svg'" alt="logo" cms:eval="src"/>
 						<p><cms:text constant="slogan"/></p>
 						<a
-							href="'tel:'.urlencode(Language::getText('phone'))"
+							href="'tel:'.urlencode(Language::get_Text('phone'))"
 							cms:eval="href"
 							class="phone"
 							>
@@ -169,7 +168,7 @@
 						<img src="_BASEURL.'/site/images/logo.svg'" alt="logo" cms:eval="src"/>
 						<p><cms:text constant="slogan"/></p>
 						<a
-							href="'tel:'.urlencode(Language::getText('phone'))"
+							href="'tel:'.urlencode(Language::get_Text('phone'))"
 							cms:eval="href"
 							class="phone"
 							>
