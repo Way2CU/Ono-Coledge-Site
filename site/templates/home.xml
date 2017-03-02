@@ -92,6 +92,7 @@
 					template="parts/details.xml"
 					/>
 				<h3 class="center"><cms:text constant="title_sponsers"/></h3>
+				<h4><cms:text constant="cupon" /></h4>
 				<ul class="image_list sponsers">
 					<cms:module
 						name="gallery"
